@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Jump Cleaner Addon</name>
+  <packageId>alyac.rimworld.jumpcleaneraddon</packageId>
+  <modVersion>1.0.0.16</modVersion>
+  <description>
+  Adds Cleaning work capabilities to the existing Jump Lifter mechanoid.
+  This mod directly patches the original Jump Lifter Def, ensuring no new mechanoid is added.
+  For existing saves, we strongly recommend using the "Mech Work Tab" mod to set the mechanoid's work priorities (it may not work otherwise).
+  We also recommend using "Silversol's maidnoid" (for aesthetic reasons).
+  * Note: Work speed and related stats are also adjusted for efficiency.
+  
+
+  점프 리프터에 청소기 기능도 추가합니다. 아쉽게도 헤일로도 없고 끄앙 소리는 내지 못합니다.
+  기존 세이브에 적용하실때 "Mech Work Tab" 모드와 같이 사용해 작업 순위를 지정해주는 걸 추천합니다. (아마 지정해주지 않으면 일을 안 할 거예요.)
+  "Silversol's maidnoid" 모드와 같이 사용하는 걸 적극 권장합니다. (기존 점프 클리너의 dds 텍스쳐가 깨져서 같이 쓰려고 만들어졌어요.)
+  </description>
+  <author>alyac</author>
+  <url>https://github.com/craftingmod/JumpCleanerAddon</url>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>imranfish.xmlextensions</packageId>
+      <displayName>XML Extensions</displayName>
+      <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>rabiosus.jumplifter</packageId>
+      <displayName>JumpLifter</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3493717994</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>imranfish.xmlextensions</li>
+    <li>rabiosus.jumplifter</li>
+  </loadAfter>
+</ModMetaData>

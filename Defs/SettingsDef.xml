@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XmlExtensions.SettingsMenuDef>
+    <modId>alyac.rimworld.jumpcleaneraddon</modId>
+    <label>Jump Cleaner Addon</label>
+    <tKey>jumpcleaner_mod_title</tKey>
+    <settings>
+      <li Class="XmlExtensions.Setting.Checkbox">
+        <key>also_firefight</key>
+        <label>Also add firefight</label>
+        <defaultValue>false</defaultValue>
+        <tKey>jumpcleaner_setting_firefight_label</tKey>
+        <tooltip>Jump firefighter!</tooltip>
+        <tKeyTip>jumpcleaner_setting_firefight_tooltip</tKeyTip>
+      </li>
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Restart game to apply changes.</text>
+        <tKey>jumpcleaner_setting_require_start</tKey>
+      </li>
+    </settings>
+  </XmlExtensions.SettingsMenuDef>
+</Defs>

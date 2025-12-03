@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <jumpcleaner_mod_title>점프 청소기 애드온</jumpcleaner_mod_title>
+  <jumpcleaner_setting_firefight_label>소방 작업 활성화</jumpcleaner_setting_firefight_label>
+  <jumpcleaner_setting_firefight_tooltip>점프 리프터가 소방 작업을 수행할 수 있도록 합니다.</jumpcleaner_setting_firefight_tooltip>
+  <jumpcleaner_setting_require_start>게임을 재시작해야 적용됩니다.</jumpcleaner_setting_require_start>
+</LanguageData>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <jumpcleaner_mod_title>Jump Cleaner Add-on</jumpcleaner_mod_title>
+  <jumpcleaner_setting_firefight_label>Include Firefighting Work</jumpcleaner_setting_firefight_label>
+  <jumpcleaner_setting_firefight_tooltip>Enables the Jump Lifter to perform Firefighting work.</jumpcleaner_setting_firefight_tooltip>
+  <jumpcleaner_setting_require_start>A game restart is required to apply changes.</jumpcleaner_setting_require_start>
+</LanguageData>

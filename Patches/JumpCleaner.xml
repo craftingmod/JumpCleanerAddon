@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="XmlExtensions.HybridPatch">
+    <xpath>Defs/ThingDef[defName="Mech_JumpLifter"]</xpath>
+    <value>
+      <!-- Cleaner work & clean speed -->
+      <statBases Operation="Safe">
+        <WorkSpeedGlobal Operation="AddOrReplace">1.5</WorkSpeedGlobal>
+        <CleaningSpeed Operation="AddOrReplace">20.0</CleaningSpeed>
+      </statBases>
+      <!-- Cleaner skill level & order -->
+      <race Operation="Safe">
+        <mechFixedSkillLevel Operation="SafeAdd">18</mechFixedSkillLevel>
+        <mechWorkTypePriorities Operation="Safe">
+          <Hauling>1</Hauling>
+          <Cleaning>3</Cleaning>
+        </mechWorkTypePriorities>
+        <mechEnabledWorkTypes Operation="Safe">
+          <li>Cleaning</li>
+        </mechEnabledWorkTypes>
+      </race>
+    </value>
+  </Operation>
+  <!-- Add firefighter -->
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>alyac.rimworld.jumpcleaneraddon</modId>
+    <key>also_firefight</key>
+    <defaultValue>false</defaultValue>
+    <caseTrue>
+      <Operation Class="XmlExtensions.HybridPatch">
+        <xpath>Defs/ThingDef[defName="Mech_JumpLifter"]/race</xpath>
+        <value>
+          <mechWorkTypePriorities Operation="Safe">
+            <Firefighter>2</Firefighter>
+          </mechWorkTypePriorities>
+          <mechEnabledWorkTypes Operation="Safe">
+            <li>Firefighter</li>
+          </mechEnabledWorkTypes>
+        </value>
+      </Operation>
+    </caseTrue>
+  </Operation>
+</Patch>
